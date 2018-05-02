@@ -45,7 +45,7 @@ BostonMap.prototype.initVis = function() {
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'})
         .addTo(vis.mapGridLayerGroup);
 
-    $.getJSON("/load_MBTA_geoJSON", function(geoJSONdata) {
+    $.getJSON("data/geojson/MBTA-lines.json", function(geoJSONdata) {
       vis.mbtaLinesLayerGroup = L.layerGroup().addTo(vis.bostonMap);
 			L.geoJson(geoJSONdata.features, {
           style: styleMBTAlines,
