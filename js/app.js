@@ -23,14 +23,6 @@ function generate_req_filename(){
 // Listen to user input
 $(document).ready(function() {
 
-    // // Navbar active class switch
-    // $("#MBTAnavbar ul li").click(function() {
-    //     // remove classes from all
-    //     $("#MBTAnavbar ul li").removeClass("active");
-    //     // add class to the one we clicked
-    //     $(this).addClass("active");
-    // });
-
     // View request
     $("#req-form").on("submit", function(e) {
         e.preventDefault();
