@@ -14,7 +14,7 @@ var basicDemographicsVis;
 var geoPatternVis = null;
 
 queue()
-    .defer(d3.json, "data/profiles/overview_1710.json")
+    .defer(d3.json, "data/profiles/overview_1710_1_0.json")
     .await(createVis);
 
 function createVis(error, jsonData) {
