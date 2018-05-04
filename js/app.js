@@ -11,10 +11,10 @@ var USER_CONTROLS = {
 function generate_req_filename(){
     var req_filename = ''
     if (USER_CONTROLS.VIEW == "overview"){
-        req_filename += 'data/profiles/' + USER_CONTROLS.VIEW + '_' + USER_CONTROLS.START_MONTH + '.json';
+        req_filename += 'data/profiles/' + USER_CONTROLS.VIEW + '_' + USER_CONTROLS.START_MONTH + '_' + USER_CONTROLS.DURATION + '.json';
     }
     else{
-        req_filename += 'data/profiles/' + USER_CONTROLS.VIEW + '_' + USER_CONTROLS.START_MONTH + '_' + USER_CONTROLS.ALGORITHM + '.json';
+        req_filename += 'data/profiles/' + USER_CONTROLS.VIEW + '_' + USER_CONTROLS.START_MONTH + '_' + USER_CONTROLS.DURATION  + '_' + USER_CONTROLS.TIME_WEIGHT + '_' + USER_CONTROLS.ALGORITHM + '.json';
     }
     return req_filename;
 }
