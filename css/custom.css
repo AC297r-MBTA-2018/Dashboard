@@ -4,6 +4,15 @@
     padding: 10px 35px !important;
 }
 
+.person-info {
+    font-weight: bold;
+    color: #87bdd8;
+}
+
+a{
+    color: #87bdd8;
+}
+
 /* Navbar */
 .navbar {
     font-size: 20px !important;
@@ -107,4 +116,36 @@
   color: #fff;
   background: rgba(38, 38, 38, 0.8);
 
+}
+
+/* markdown content  */
+.markdown-content {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    background-color: white;
+    padding: 10px 100px;
+    margin-top: 20px;
+    max-width: -webkit-fill-available;
+}
+
+.markdown-content h2{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.markdown-content p{
+    padding: 5px 80px;
+    text-align: justify !important;
+}
+
+
+.image-t {
+    display: block;
+    /* width: 30%; */
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
 }

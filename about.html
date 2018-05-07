@@ -13,11 +13,52 @@
     <link rel="stylesheet" href="lib/css/keen-dashboards.css">
     <link rel="stylesheet" href="lib/css/leaflet.css">
     <link rel="stylesheet" href="lib/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/css/drop-theme-arrows.css" />
 
     <link rel="stylesheet" href="css/custom.css">
 
     <script src="lib/js/tether.min.js"></script>
+    <script src="lib/js/drop.min.js"></script>
     <script type="text/javascript" src="lib/js/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            dropInstance = new Drop({
+                target: document.querySelector('.jasmine'),
+                content: '<strong>Jiawen Tong</strong><br>M.S. Computational Science and Engineering<br><a href="https://www.linkedin.com/in/jiawen-tong-jasmine/" target="_blank">LinkedIn</a> / <a href="https://github.com/JasmineeeeeTONG" target="_blank">GitHub</a>',
+                classes: 'drop-theme-arrows',
+                position: 'bottom left',
+                openOn: 'hover'
+            })
+
+            dropInstance = new Drop({
+                target: document.querySelector('.yijun'),
+                content: '<strong>Yijun Shen</strong><br>M.S. Computational Science and Engineering<br><a href="https://www.linkedin.com/in/yijun-shen/" target="_blank">LinkedIn</a> / <a href="https://github.com/syj19950301" target="_blank">GitHub</a>',
+                classes: 'drop-theme-arrows',
+                position: 'bottom left',
+                openOn: 'hover'
+            })
+
+            dropInstance = new Drop({
+                target: document.querySelector('.anthony'),
+                content: '<strong>Anthony Hou</strong><br>A.B. Statistics<br><a href="https://www.linkedin.com/in/anthony-hou/" target="_blank">LinkedIn</a> / <a href="https://github.com/anthonyhou14" target="_blank">GitHub</a>',
+                classes: 'drop-theme-arrows',
+                position: 'bottom left',
+                openOn: 'hover'
+            })
+
+            dropInstance = new Drop({
+                target: document.querySelector('.michelle'),
+                content: '<strong>Chia Chi (Michelle) Ho</strong><br>M.S. Computational Science and Engineering<br><a href="https://www.linkedin.com/in/chia-chi-michelle-ho-30543391/" target="_blank">LinkedIn</a> / <a href="https://github.com/MichelleCCHo" target="_blank">GitHub</a>',
+                classes: 'drop-theme-arrows',
+                position: 'bottom left',
+                openOn: 'hover'
+            })
+
+        });
+    </script>
+
 </head>
 
 <body class="application">
@@ -49,7 +90,27 @@
         </div>
     </nav>
 
-    <div class="container-fluid about-body">
+    <div class="container-fluid about-body markdown-content">
+        <div class="row">
+            <div class="col-md-5">
+                <img class="image-t" src="img/image_t.png" width="550" height="400" alt="MBTA T">
+            </div>
+            <div class="col-md-7">
+                <h2>About the Project</h2>
+                <p>
+                    <em>MBTA Rider Segmentation: The Who, What, and When of Public Transit</em> is a Spring 2018 <a href="http://ac297r.com/"> Harvard IACS Capstone Project</a>
+                </p>
+                <br/>
+
+                <h2>About Us</h2>
+                <p>We are <span class="person-info michelle">Michelle Ho</span>, <span class="person-info jasmine">Jiawen Tong</span> and <span class="person-info yijun">Yijun Shen</span> and <span class="person-info anthony">Anthony Hou</span>.
+                    <p>We would like to thank the MBTA representatives <strong>Brendan Fogarty</strong> and <strong>Ian Thistle</strong> for providing insightful guidance on our project. We would also like to thank our advisor <strong>Zona Kostic</strong>, Professor
+                        <strong>Pavlos Protopapas</strong> and every member of the teaching team for conducting this amazing course.</p>
+            </div>
+
+        </div>
+
+
 
 
 
